@@ -1,15 +1,16 @@
-#include <stdio.h>
+
+#include<stdio.h>
 int main()
  {
-    char ch;
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
 
-    printf("Enter a lowercase character: ");
-    scanf("%c", &ch);
+    if (num % 5 == 0 || num % 7 == 0)
+        printf("Number is divisible by 5 or 7\n");
+    else
+        printf("Number is not divisible by 5 or 7\n");
 
-    if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
-        printf("%c is a vowel.\n", ch);
-    } else {
-        printf("%c is a consonant.\n", ch);
-    }
-    return 0;
+        return 0;
+
 }
