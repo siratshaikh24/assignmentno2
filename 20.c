@@ -3,12 +3,9 @@
 int main() 
 {
     char ch;
-
-    // Input a character
     printf("Enter a character: ");
     scanf("%c", &ch);
 
-    // Check ASCII ranges
     if (ch >= 48 && ch <= 57) {
         printf("The character is a Digit.\n");
     }

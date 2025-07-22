@@ -2,17 +2,8 @@
 int main()
 {
     char ch;
-    printf("Enter Anything");
+    printf("Enter Lowercase:");
     scanf("%c",&ch);
-    if(isupper(ch))
-    printf("Capital Letter");
-    else if(islower(ch))
-    printf("small letter");
-    else if(isdigit(ch))
-    printf("Digit");
-    else
-    printf("Special Symbol");
-    
+    printf("The Uppercase character is %c",ch-32);
     return 0;
-   
 }
